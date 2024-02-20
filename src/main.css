@@ -1,0 +1,285 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+:root {
+  --text-color: #fff;
+  --bg-color: #F1F1F1;
+  --main-color: #FF630F;
+  --paragraph-color: #616161;
+}
+
+body {
+  background: var(--bg-color);
+}
+.home__section {
+  height: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(assets/herobackground.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.home__sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.home__sidebar li {
+  width: 100%;
+}
+
+.home__sidebar a {
+  width: 100%;
+}
+
+.menu__button {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  .home__section {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+  }
+
+  .social__media {
+    flex: 1;
+    overflow: scroll;
+  }
+}
+
+nav {
+  display: flex;
+  font-family: Montserrat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100000;
+  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1));
+  background-size: cover;
+}
+
+nav.sticky {
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+}
+
+section {
+  display: flex;
+}
+
+nav {
+  box-shadow: 2px 1px 10px;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  
+}
+
+nav li {
+  list-style-type: none;
+  height: 90px;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  display: flex;
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 300;
+  transition: all .50s ease;
+  padding: 0 30px;
+  align-items: center;
+}
+
+nav ul li a:hover {
+  color: var(--main-color);
+}
+.logo__block { 
+  align-self: center;
+  width: 32%;
+  text-align: center;
+}
+
+nav img {
+  height: 43px;
+}
+
+
+span {
+  color: var(--main-color);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.contact__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 32%;
+  margin-left: auto;
+  align-self: center;
+}
+
+.contact__number {
+  color: var(--text-color);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+
+.home__text {
+  position: relative;
+  font-style: normal;
+  line-height: normal;
+  text-align: right;
+  margin: auto;
+  padding: 230px 1em;
+  max-width: 900px;
+  width: 90%;
+}
+
+.home__space {
+  width: 100%;
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: var(--main-color);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.4rem;
+}
+
+.home__text h1 {
+  color: var(--text-color);
+  font-family: Marcellus;
+  font-size: 80px;
+  font-weight: 400;
+}
+
+.home__button {
+  border: 1px solid #FF630F;
+  width: 200px;
+  height: 60px;
+  color: var(--text-color);
+  font-family: Marcellus;
+  font-weight: 400;
+  font-size: 15px;
+  background: transparent;
+}
+
+.home__button a {
+  color: var(--text-color);
+  transition: all .50s ease;
+  padding: 1em 2em;
+}
+
+.home__button a:hover {
+  color: var(--main-color);
+}
+
+.social__media {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  font-family: Montserrat;
+  color: var(--text-color);
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.left__content {
+  padding: 48px 80px 48px 16px;
+  width: 32%;
+  justify-content: start;
+}
+
+.left__content p {
+  font-size: 16px;
+  line-height: 2rem;
+}
+
+.social__icons {
+  margin-bottom: 20px;
+}
+
+.social__icons ul {
+  display: flex;
+}
+
+.social__icons li {
+  margin-right: calc(25px/2);
+}
+
+.social__icons i {
+  color: var(--main-color);
+  vertical-align: middle;
+  font-size: 24px;
+}
+
+.landing__sample {
+  display: flex;
+  align-items: center;
+}
+
+.landing__sample img {
+  width: 264px;
+  height: 172px;
+  margin-right: 40px;
+}
+
+@media(max-width: 800px) {
+  .hideOnMobile{
+    display: none;
+  }
+  .menu__button {
+    display: block;
+  }
+}
+
+@media(max-width: 400px) {
+  .home__sidebar {
+    width: 100%;
+  }
+}

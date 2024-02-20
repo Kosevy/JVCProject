@@ -1,0 +1,70 @@
+.project__section {
+  display: flex;
+  width: 100%;
+}
+
+.project__section div {
+  width: 100%;
+  display: flex;
+}
+
+.project__section div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image__container {
+  position: relative;
+}
+
+.image__img {
+  display: block;
+  width: 100%;
+}
+
+.image__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: var(--text-color);
+  font-family: Montserrat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 0;
+  transition: opacity 0.25s;
+  padding: 80px 96px 48px 48px;
+}
+
+.image__overlay a {
+  width: 200px;
+}
+
+.image__overlay:hover {
+  opacity: 1;
+}
+
+.image__title {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.image__description {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+
+.home__button {
+  cursor: pointer;
+  transition: all .50s ease;
+}
+
+.home__button:hover {
+  color: var(--main-color);
+  cursor: pointer;
+}
