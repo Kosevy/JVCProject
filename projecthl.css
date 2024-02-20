@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: block;
+  text-align: center;
+  padding: 96px 16px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1368px;
+  align-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project__section {
+  background-color: white;
+  padding: 100px 0;
+}
+
+.project__summary-box {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.project__summary-box h2, h3, p {
+  margin-bottom: 20px;
+}
+
+.project__summary-box h3 {
+  font-family: Marcellus;
+  font-size: 40px;
+  display: inline-block;
+  position: relative;
+}
+
+.project__summary-box p {
+  font-family: Montserrat;
+  color: var(--paragraph-color);
+  line-height: 2rem;
+  padding: 0 240px;
+  display: inline-block;
+  position: relative;
+}
+
+
+.filter__button {
+  margin-bottom: 35px;
+}
+
+.project__section .filter__button {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.project__section .filter__button ul {
+  text-align: center;
+  padding: 0;
+}
+
+.project__section .filter__button ul li {
+  font-family: Marcellus;
+  color: #212121;
+  margin: 0 26px 0 0;
+  padding: 7px 14px;
+  font-weight: 700;
+  font-size: 16px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.project__section .filter__button ul li:nth-child(4) {
+  margin: 0;
+}
+
+.project__section .filter__button ul li.active {
+  color: var(--main-color);
+  border-bottom: 2px solid var(--main-color);
+}
+
+.project__section .project__gallery {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project__section .project__gallery .item {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  position: relative;
+  padding: 8px;
+}
+
+.project__section .project__gallery .item .inner {
+  position: relative;
+}
+
+.project__section .project__gallery .item img {
+  width: 100%;
+  display: block;
+}
+
+@media(max-width:767px){
+  .project__section .project__gallery .item {
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    padding: 8px;
+  }
+}
+
+@media(max-width:500px){
+  .project__section .project__gallery .item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.return__section {
+  border: 1px solid #FF630F;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.return__btn a {
+  color: var(--main-color);
+  font-family: Marcellus;
+  font-weight: 400;
+  font-size: 32px;
+  text-decoration: none;
+  background-color: white;
+  justify-self: center;
+}

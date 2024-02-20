@@ -1,0 +1,295 @@
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="src/main.css">
+  <link rel="stylesheet" href="src/testimonials.css">
+  <link rel="stylesheet" href="src/about.css">
+  <link rel="stylesheet" href="src/project.css">
+  <link rel="stylesheet" href="src/service.css">
+  <link rel="stylesheet" href="src/contact.css">
+
+  <meta charset="UTF-8">
+  <title>JVC Urbano</title>
+</head>
+<body>
+  <section class="home__section" id="home-section">
+      <nav class="hero__section">
+        <div class="logo__block">
+          <img src="src/assets/logo.png" alt="jvc__logo">
+        </div>
+        <ul class="home__sidebar">
+          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+          <li><a href="#about-section">Nosotros</a></li>
+          <li><a href="#service-section">Servicios</a></li>
+          <li><a href="#project-section">Proyectos</a></li>
+          <li><a href="#">Testimonios</a></li>
+          <li><a href="#contact-section">Contáctanos</a></li>
+        </ul>
+        <ul>
+          <li class="hideOnMobile"><a href="#about-section">Nosotros</a></li>
+          <li class="hideOnMobile"><a href="#service-section">Servicios</a></li>
+          <li class="hideOnMobile"><a href="#project-section">Proyectos</a></li>
+          <li class="hideOnMobile"><a href="#">Testimonios</a></li>
+          <li class="hideOnMobile"><a href="#contact-section">Contáctanos</a></li>
+          <li class="menu__button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        <div class="contact__block">
+          <h6 class="contact__text"><span>Contáctanos</span></h6>
+          <p class="contact__number">+51 982 410 414</p>
+        </div>
+      </nav>
+      <div class="home__text">
+        <h2>CONSTRUCCIONES & SANEAMIENTO</h2>
+        <h1>Diseñamos tu espacio de ensueño</h1>
+        <div class="home__space"></div>
+        <button class="home__button"><a href="#contact-section">Reserva tu consulta</a></button>
+      </div>
+      <div class="social__media">
+        <div class="left__content">
+          <div class="social__icons">
+            <ul>
+              <li><a href="#"><i class="ri-whatsapp-fill"></i></a></li>
+              <li><a href="#"><i class="ri-facebook-circle-fill"></i></a></li>
+            </ul>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+        </div>
+        <div class="landing__sample">
+          <img src="src/assets/Landing1.jpg" alt="">
+          <img src="src/assets/Landing2.jpg" alt="">
+          <img src="src/assets/Landing3.jpg" alt="">
+        </div>
+      </div>
+    </section>
+    
+    <section class="about__section" id="about-section">
+      <div class="about__text">
+        <div class="about__introduction">
+          <h2>SOBRE NOSOTROS</h2>
+          <h3>Contamos con más de 10 años de experiencia</h3>
+          <p>Emporium tortor vel orci efficitur, in venenatis felis molestie. In lobortis odio augue, id vulputate erat egestas sed. Ut euismod ipsum ut dolor hendrerit, non ultricies urna accumsan.</p>
+          <p>Donec vitae risus eget nisi molestie vehicula quis vel magna. Donec tristique mauris eu fermentum dignissim.
+          </p>
+        </div>
+       <div class="text__stats">
+            <div class="stats">
+              <span>28+</span>
+              <p>Años de experiencia</p>
+            </div>
+            <div class="stats">
+              <span>28+</span>
+              <p>Project Completed'</p>
+            </div>
+            <div class="stats">
+              <span>28+</span>
+              <p>Años de experiencia</p>
+            </div>
+        </div>
+     </div>
+     <div class="about__images">
+       <div class="column">
+         <div class="photo1">
+           <img src="src/assets/About2.jpg" alt="">
+         </div>
+         <div class="photo2">
+           <img src="src/assets/About3.jpg" alt="">
+         </div>
+       </div>
+       <div class="column">
+         <div class="photo3">  
+          <img src="src/assets/About4.jpg" alt="">
+        </div>
+         <div class="photo4">
+           <img src="src/assets/About1.jpg" alt="">
+        </div>
+       </div>
+      </div>
+    </section>
+
+  <section class="project__section" id="project-section">
+    <div class="image__container">
+      <img class="image__img" src="src/assets/p1.jpg" alt="projectbg1">
+      <div class="image__overlay">
+        <div class="image__title">Arquitectura</div>
+        <p class="image__description">Architecture ipsum dolor sit amet consectetur adipiscing.</p>
+        <a href="projects.html"><button class="home__button">Ver proyectos</button></a>
+      </div>
+    </div>
+    <div class="image__container">
+      <img class="image__img" src="src/assets/p2.jpg" alt="projectbg1">
+      <div class="image__overlay">
+        <div class="image__title">Arquitectura</div>
+        <p class="image__description">Architecture ipsum dolor sit amet consectetur adipiscing.</p>
+        <a href="projects.html"><button class="home__button">Ver proyectos</button></a>
+      </div>
+    </div>
+    <div class="image__container">
+      <img class="image__img" src="src/assets/p3.jpg" alt="projectbg1">
+      <div class="image__overlay">
+        <div class="image__title">Arquitectura</div>
+        <p class="image__description">Architecture ipsum dolor sit amet consectetur adipiscing.</p>
+        <a href="projects.html"><button class="home__button">Ver proyectos</button></a>
+      </div>
+    </div>
+    <div class="image__container">
+      <img class="image__img" src="src/assets/p4.jpg" alt="projectbg1">
+      <div class="image__overlay">
+        <div class="image__title">Arquitectura</div>
+        <p class="image__description">Architecture ipsum dolor sit amet consectetur adipiscing.</p>
+        <a href="projects.html"><button class="home__button">Ver proyectos</button></a>
+      </div>
+    </div>
+    <div class="image__container">
+      <img class="image__img" src="src/assets/p5.jpg" alt="projectbg1">
+      <div class="image__overlay">
+        <div class="image__title">Arquitectura</div>
+        <p class="image__description">Architecture ipsum dolor sit amet consectetur adipiscing.</p>
+        <a href="projects.html"><button class="home__button">Ver proyectos</button></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="service__section" id="service-section">
+    <div class="service__content-box">
+      <div class="service__summary-box">
+        <h2>Nuestros servicios</h2>
+        <h3>Lo mejor de JVC Urbano</h3>
+        <p>How we work tortor vel orci efficitur, in venenatis felis molestie. In lobortis odio augue, id vulputate erat egestas sed. Ut euismod ipsum ut dolor hendrerit, non ultricies urna accumsan.</p>
+      </div>
+      <div class="service__list-row">
+        <div>
+          <img src="src/assets/serviceIcon1.png" alt="">
+          <h4>Residential Design</h4>
+          <p>Our services tortor vel orci efficitur, in venenatis felis molestie. In lobortis odio augue.</p>
+        </div>
+        <div>
+          <img src="src/assets/serviceIcon2.png" alt="">
+          <h4>3D Modelling</h4>
+          <p>Our services tortor vel orci efficitur, in venenatis felis molestie. In lobortis odio augue.</p>
+        </div>
+        <div>
+          <img src="src/assets/serviceIcon3.png" alt="">
+          <h4>Minimalist Home
+          </h4>
+          <p>Our services tortor vel orci efficitur, in venenatis felis molestie. In lobortis odio augue.</p>
+        </div>
+      </div>
+      <div class="service__list-row">
+        <div>
+          <img src="src/assets/serviceIcon4.png" alt="">
+          <h4>Arquitectura</h4>
+          <p>Our services tortor vel orci efficitur, in venenatis felis molestie. In lobortis odio augue.</p>
+        </div>
+        <div>
+          <img src="src/assets/serviceIcon5.png" alt="">
+          <h4>Interiores & Exteriores</h4>
+          <p>Our services tortor vel orci efficitur, in venenatis felis molestie. In lobortis odio augue.</p>
+        </div>
+        <div>
+          <img src="src/assets/serviceIcon6.png" alt="">
+          <h4>Modern Corporate</h4>
+          <p>Our services tortor vel orci efficitur, in venenatis felis molestie. In lobortis odio augue.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial__section">
+    <p></p>
+  </section>
+
+  <section class="contact__section" id="contact-section">
+    <div class="description__box">
+      <h2>CONTÁCTANOS</h2>
+      <h3>Get In Touch</h3>
+      <p class="summary__text">Emporium tortor vel orci efficitur, in venenatis felis molestie. In lobortis odio augue, id vulputate erat egestas sed. Ut euismod ipsum ut dolor hendrerit, non ultricies urna accumsan.</p>
+      <div class="box__section">
+        <div class="info__box info__group1">
+          <div class="info__all-elements">
+            <i class="ri-cellphone-line"></i>
+            <div class="info__elements">
+              <h4>Número telefónico</h4>
+              <p>+51 982-410-414</p>
+            </div>
+          </div>
+          <div class="info__all-elements">
+            <i class="ri-mail-open-line"></i>
+            <div class="info__elements">
+              <h4>Número telefónico</h4>
+              <p>+51 982-410-414</p>
+            </div>
+          </div>
+        </div>
+        <div class="home__space"></div>
+        <div class="info__box info__group2">
+          <div class="info__all-elements">
+            <i class="ri-global-line"></i>
+            <div class="info__elements">
+              <h4>Número telefónico</h4>
+              <p>+51 982-410-414</p>
+            </div>
+          </div>
+          <div class="info__all-elements">
+            <i class="ri-map-pin-line"></i>
+            <div class="info__elements">
+              <h4>Número telefónico</h4>
+              <p>+51 982-410-414</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="7cd86f48-bc16-40cf-b67f-7945e2bc684e">
+      <div class="row__box">
+        <div class="input__group">
+          <input type="text" name="name" id="name" required>
+          <label for="name">Nombre</label>
+        </div>
+        <div class="input__group">
+          <input type="text" id="email" required>
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div class="input__group">
+        <input type="text" id="subject" required>
+        <label for="subject">Asunto</label>
+      </div>
+      <div class="input__group">
+        <textarea id="message" rows="13" required></textarea>
+        <label for="message">Mensaje</label>
+      </div>
+      <button class="contact__button" type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <script type="text/javascript">
+    window.addEventListener("scroll", function(){
+      var nav = document.querySelector("nav");
+      nav.classList.toggle("sticky", window.scrollY > 0);
+    })
+  </script>
+
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.home__sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.home__sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+
+  <script src="src/projectscript.js"></script>
+</body>
+</html>
