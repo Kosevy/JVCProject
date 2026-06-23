@@ -1,0 +1,72 @@
+.project {
+  width: 100%;
+}
+
+/* Optional: if we want to wrap each figure, but figures are direct children */
+.project .project__container {
+  position: relative;
+  margin: 0; /* adjust if needed */
+}
+
+.project .project__image {
+  display: block;
+  width: 100%;
+  height: auto; /* maintain aspect ratio */
+}
+
+.project .project__overlay {
+  position: absolute;
+  inset: 0; /* top right bottom left 0 */
+  background: rgba(0, 0, 0, 0.6);
+  color: var(--text-color);
+  font-family: Montserrat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 0;
+  transition: opacity 0.25s;
+  padding: 1.5rem; /* 24px? original 80px 96px 48px 48px - we'll keep similar */
+  padding: 80px 96px 48px 48px;
+}
+
+.project .project__overlay a {
+  width: 200px;
+  /* display: inline-block; */
+}
+
+.project .project__overlay:hover {
+  opacity: 1;
+}
+
+.project .project__title {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.project .project__description {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+/* Button style - could be reused; we keep specific for project */
+.project .project__button {
+  cursor: pointer;
+  transition: all .5s ease;
+  border: 1px solid var(--main-color);
+  width: 200px;
+  height: 60px;
+  color: var(--text-color);
+  font-family: Marcellus;
+  font-weight: 400;
+  font-size: 15px;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.project .project__button:hover {
+  color: var(--main-color);
+  background-color: var(--bg-color);
+}

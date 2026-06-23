@@ -7,15 +7,10 @@
   />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 
-  <link rel="stylesheet" href="src/main.css">
-  <link rel="stylesheet" href="src/testimonials.css">
-  <link rel="stylesheet" href="src/about.css">
-  <link rel="stylesheet" href="src/project.css">
-  <link rel="stylesheet" href="src/service.css">
-  <link rel="stylesheet" href="src/contact.css">
 
   <meta charset="UTF-8">
   <title>JVC Urbano</title>
@@ -115,47 +110,47 @@
       </div>
     </section>
 
-  <section class="project__section" id="project-section">
-    <div class="image__container">
-      <img class="image__img" src="src/assets/p1.jpg" alt="projectbg1">
-      <div class="image__overlay">
-        <div class="image__title">Arquitectura</div>
-        <p class="image__description">Architecture ipsum dolor sit amet consectetur adipiscing.</p>
-        <a href="projects.html"><button class="home__button">Ver proyectos</button></a>
-      </div>
-    </div>
-    <div class="image__container">
-      <img class="image__img" src="src/assets/p2.jpg" alt="projectbg1">
-      <div class="image__overlay">
-        <div class="image__title">Arquitectura</div>
-        <p class="image__description">Architecture ipsum dolor sit amet consectetur adipiscing.</p>
-        <a href="projects.html"><button class="home__button">Ver proyectos</button></a>
-      </div>
-    </div>
-    <div class="image__container">
-      <img class="image__img" src="src/assets/p3.jpg" alt="projectbg1">
-      <div class="image__overlay">
-        <div class="image__title">Arquitectura</div>
-        <p class="image__description">Architecture ipsum dolor sit amet consectetur adipiscing.</p>
-        <a href="projects.html"><button class="home__button">Ver proyectos</button></a>
-      </div>
-    </div>
-    <div class="image__container">
-      <img class="image__img" src="src/assets/p4.jpg" alt="projectbg1">
-      <div class="image__overlay">
-        <div class="image__title">Arquitectura</div>
-        <p class="image__description">Architecture ipsum dolor sit amet consectetur adipiscing.</p>
-        <a href="projects.html"><button class="home__button">Ver proyectos</button></a>
-      </div>
-    </div>
-    <div class="image__container">
-      <img class="image__img" src="src/assets/p5.jpg" alt="projectbg1">
-      <div class="image__overlay">
-        <div class="image__title">Arquitectura</div>
-        <p class="image__description">Architecture ipsum dolor sit amet consectetur adipiscing.</p>
-        <a href="projects.html"><button class="home__button">Ver proyectos</button></a>
-      </div>
-    </div>
+  <section class="project" id="project-section">
+    <figure class="project__container">
+      <img class="project__image" src="src/assets/p1.jpg" alt="projectbg1">
+      <figcaption class="project__overlay">
+        <h3 class="project__title">Arquitectura</h3>
+        <p class="project__description">Architecture ipsum dolor sit amet consectetur adipiscing.</p>
+        <a href="projects.html" class="project__button">Ver proyectos</a>
+      </figcaption>
+    </figure>
+    <figure class="project__container">
+      <img class="project__image" src="src/assets/p2.jpg" alt="projectbg1">
+      <figcaption class="project__overlay">
+        <h3 class="project__title">Arquitectura</h3>
+        <p class="project__description">Architecture ipsum dolor sit amet consectetur adipiscing.</p>
+        <a href="projects.html" class="project__button">Ver proyectos</a>
+      </figcaption>
+    </figure>
+    <figure class="project__container">
+      <img class="project__image" src="src/assets/p3.jpg" alt="projectbg1">
+      <figcaption class="project__overlay">
+        <h3 class="project__title">Arquitectura</h3>
+        <p class="project__description">Architecture ipsum dolor sit amet consectetur adipiscing.</p>
+        <a href="projects.html" class="project__button">Ver proyectos</a>
+      </figcaption>
+    </figure>
+    <figure class="project__container">
+      <img class="project__image" src="src/assets/p4.jpg" alt="projectbg1">
+      <figcaption class="project__overlay">
+        <h3 class="project__title">Arquitectura</h3>
+        <p class="project__description">Architecture ipsum dolor sit amet consectetur adipiscing.</p>
+        <a href="projects.html" class="project__button">Ver proyectos</a>
+      </figcaption>
+    </figure>
+    <figure class="project__container">
+      <img class="project__image" src="src/assets/p5.jpg" alt="projectbg1">
+      <figcaption class="project__overlay">
+        <h3 class="project__title">Arquitectura</h3>
+        <p class="project__description">Architecture ipsum dolor sit amet consectetur adipiscing.</p>
+        <a href="projects.html" class="project__button">Ver proyectos</a>
+      </figcaption>
+    </figure>
   </section>
 
   <section class="service__section" id="service-section">
@@ -290,6 +285,6 @@
     }
   </script>
 
-  <script src="src/projectscript.js"></script>
+  <script src="js/modules/projectscript.js"></script>
 </body>
 </html>
