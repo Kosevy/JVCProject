@@ -1,286 +1,217 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
-    rel="stylesheet"
-  />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
-  <title>JVC Urbano</title>
+  <meta name="description" content="JVC Urbano - Empresa líder en construcción, arquitectura y reformas en Perú. Más de 10 años de experiencia entregando proyectos de calidad.">
+  <meta name="keywords" content="constructora, arquitectura, reformas, construcción, Lima, Perú, JVC Urbano">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/main.css">
+  <title>JVC Urbano - Constructora y Arquitectura</title>
 </head>
 <body>
-  <section class="home__section" id="home-section">
-    <header class="hero__section">
-      <div class="logo__block">
-        <img src="src/assets/logo.png" alt="JVC Urbano logo">
+  <!-- HEADER -->
+  <header id="header">
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="/">
+          <img src="/src/assets/logo.png" alt="JVC Urbano" />
+        </a>
       </div>
-      <nav aria-label="Primary navigation">
-        <ul class="home__sidebar">
-          <li class="close-sidebar-btn">
-            <a href="#" aria-label="Close menu">
-              <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224-224-224 224-56 56-224-224-224 224Z"/></svg>
-            </a>
-          </li>
-          <li><a href="#about-section">Nosotros</a></li>
-          <li><a href="#service-section">Servicios</a></li>
-          <li><a href="#project-section">Proyectos</a></li>
-          <li><a href="#">Testimonios</a></li>
-          <li><a href="#contact-section">Contáctanos</a></li>
-        </ul>
-        <ul>
-          <li class="hideOnMobile"><a href="#about-section">Nosotros</a></li>
-          <li class="hideOnMobile"><a href="#service-section">Servicios</a></li>
-          <li class="hideOnMobile"><a href="#project-section">Proyectos</a></li>
-          <li class="hideOnMobile"><a href="#">Testimonios</a></li>
-          <li class="hideOnMobile"><a href="#contact-section">Contáctanos</a></li>
-          <li class="menu__button" aria-label="Open menu">
-            <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-            </a>
-          </li>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#about">Nosotros</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="/projects.html">Proyectos</a></li>
+          <li><a href="#testimonials">Testimonios</a></li>
         </ul>
       </nav>
-      <div class="contact__block">
-        <h6 class="contact__text"><span>Contáctanos</span></h6>
-        <p class="contact__number">+51 982 410 414</p>
+      <div class="nav-contact">
+        <div class="contact-info-header">
+          <span>Contáctanos</span><br>
+          <strong>+51 982 410 414</strong>
+        </div>
       </div>
-    </header>
-
-    <div class="home__text">
-      <h2>CONSTRUCCIONES & SANEAMIENTO</h2>
-      <h1>Diseñamos tu espacio de ensueño</h1>
-      <div class="home__space"></div>
-      <button class="home__button"><a href="#contact-section">Reserva tu consulta</a></button>
+      <button class="mobile-menu-btn" aria-label="Abrir menú">
+        <i class="ri-menu-line"></i>
+      </button>
     </div>
+  </header>
 
-    <div class="social__media">
-      <div class="left__content">
-        <div class="social__icons">
-          <ul>
-            <li><a href="#" aria-label="WhatsApp"><i class="ri-whatsapp-fill"></i></a></li>
-            <li><a href="#" aria-label="Facebook"><i class="ri-facebook-circle-fill"></i></a></li>
-          </ul>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
-      </div>
-      <div class="landing__sample">
-        <img src="src/assets/Landing1.jpg" alt="Landing image 1">
-        <img src="src/assets/Landing2.jpg" alt="Landing image 2">
-        <img src="src/assets/Landing3.jpg" alt="Landing image 3">
-      </div>
-    </div>
-  </section>
-
-  <section class="about__section" id="about-section">
-    <div class="about__text">
-      <div class="about__introduction">
-        <h2>SOBRE NOSOTROS</h2>
-        <h3>Contamos con más de 10 años de experiencia</h3>
-        <p>Emporium tortor vel orci efficitur, in venenatis felis molestie. In lobortis odio augue, id vulputate erat egestas sed. Ut euismod ipsum ut dolor hendrerit, non ultricies urna accumsan.</p>
-        <p>Donec vitae risus eget nisi molestie vehicula quis vel magna. Donec tristique mauris eu fermentum dignissim.
-        </p>
-      </div>
-      <div class="text__stats">
-        <div class="stats">
-          <span>28+</span>
-          <p>Años de experiencia</p>
-        </div>
-        <div class="stats">
-          <span>28+</span>
-          <p>Proyectos completados</p>
-        </div>
-        <div class="stats">
-          <span>28+</span>
-          <p>Años de experiencia</p>
-        </div>
-      </div>
-    </div>
-    <div class="about__images">
-      <div class="column">
-        <div class="photo1">
-          <img src="src/assets/About2.jpg" alt="About image 1">
-        </div>
-        <div class="photo2">
-          <img src="src/assets/About3.jpg" alt="About image 2">
-        </div>
-      </div>
-      <div class="column">
-        <div class="photo3">
-          <img src="src/assets/About4.jpg" alt="About image 3">
-        </div>
-        <div class="photo4">
-          <img src="src/assets/About1.jpg" alt="About image 4">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="project" id="project-section">
-    <figure class="project__container">
-      <img class="project__image" src="src/assets/p1.jpg" alt="Project image 1">
-      <figcaption class="project__overlay">
-        <h3 class="project__title">Arquitectura</h3>
-        <p class="project__description">Architecture ipsum dolor sit amet consectetur adipiscing.</p>
-        <a href="projects.html" class="project__button">Ver proyectos</a>
-      </figcaption>
-    </figure>
-    <figure class="project__container">
-      <img class="project__image" src="src/assets/p2.jpg" alt="Project image 2">
-      <figcaption class="project__overlay">
-        <h3 class="project__title">Arquitectura</h3>
-        <p class="project__description">Architecture ipsum dolor sit amet consectetur adipiscing.</p>
-        <a href="projects.html" class="project__button">Ver proyectos</a>
-      </figcaption>
-    </figure>
-    <figure class="project__container">
-      <img class="project__image" src="src/assets/p3.jpg" alt="Project image 3">
-      <figcaption class="project__overlay">
-        <h3 class="project__title">Arquitectura</h3>
-        <p class="project__description">Architecture ipsum dolor sit amet consectetur adipiscing.</p>
-        <a href="projects.html" class="project__button">Ver proyectos</a>
-      </figcaption>
-    </figure>
-    <figure class="project__container">
-      <img class="project__image" src="src/assets/p4.jpg" alt="Project image 4">
-      <figcaption class="project__overlay">
-        <h3 class="project__title">Arquitectura</h3>
-        <p class="project__description">Architecture ipsum dolor sit amet consectetur adipiscing.</p>
-        <a href="projects.html" class="project__button">Ver proyectos</a>
-      </figcaption>
-    </figure>
-    <figure class="project__container">
-      <img class="project__image" src="src/assets/p5.jpg" alt="Project image 5">
-      <figcaption class="project__overlay">
-        <h3 class="project__title">Arquitectura</h3>
-        <p class="project__description">Architecture ipsum dolor sit amet consectetur adipiscing.</p>
-        <a href="projects.html" class="project__button">Ver proyectos</a>
-      </figcaption>
-    </figure>
-  </section>
-
-  <section class="service__section" id="service-section">
-    <div class="service__content-box">
-      <div class="service__summary-box">
-        <h2>Nuestros servicios</h2>
-        <h3>Lo mejor de JVC Urbano</h3>
-        <p>How we work tortor vel orci efficitur, in venenatis felis molestie. In lobortis odio augue, id vulputate erat egestas sed. Ut euismod ipsum ut dolor hendrerit, non ultricies urna accumsan.</p>
-      </div>
-      <div class="service__list-row">
-        <div>
-          <img src="src/assets/serviceIcon1.png" alt="Residential Design icon">
-          <h4>Residential Design</h4>
-          <p>Our services tortor vel orci efficitur, in venenatis felis molestie. In lobortis odio augue.</p>
-        </div>
-        <div>
-          <img src="src/assets/serviceIcon2.png" alt="3D Modelling icon">
-          <h4>3D Modelling</h4>
-          <p>Our services tortor vel orci efficitur, in venenatis felis molestie. In lobortis odio augue.</p>
-        </div>
-        <div>
-          <img src="src/assets/serviceIcon3.png" alt="Minimalist Home icon">
-          <h4>Minimalist Home</h4>
-          <p>Our services tortor vel orci efficitur, in venenatis felis molestie. In lobortis odio augue.</p>
-        </div>
-      </div>
-      <div class="service__list-row">
-        <div>
-          <img src="src/assets/serviceIcon4.png" alt="Arquitectura icon">
-          <h4>Arquitectura</h4>
-          <p>Our services tortor vel orci efficitur, in venenatis felis molestie. In lobortis odio augue.</p>
-        </div>
-        <div>
-          <img src="src/assets/serviceIcon5.png" alt="Interiores & Exteriores icon">
-          <h4>Interiores & Exteriores</h4>
-          <p>Our services tortor vel orci efficitur, in venenatis felis molestie. In lobortis odio augue.</p>
-        </div>
-        <div>
-          <img src="src/assets/serviceIcon6.png" alt="Modern Corporate icon">
-          <h4>Modern Corporate</h4>
-          <p>Our services tortor vel orci efficitur, in venenatis felis molestie. In lobor...</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="testimonial__section">
-    <h2>Testimonios</h2>
-    <p>Aquí aparecerán los testimonios de nuestros clientes.</p>
-  </section>
-
-  <section class="contact__section" id="contact-section">
-    <div class="description__box">
-      <h2>CONTÁCTANOS</h2>
-      <h3>Get In Touch</h3>
-      <p class="summary__text">Emporium tortor vel orci efficitur, in venenatis felis molestie. In lobortis odio augue, id vulputate erat egestas sed. Ut euismod ipsum ut dolor hendrerit, non ultricies urna accumsan.</p>
-      <div class="box__section">
-        <div class="info__box info__group1">
-          <div class="info__all-elements">
-            <i class="ri-cellphone-line"></i>
-            <div class="info__elements">
-              <h4>Número telefónico</h4>
-              <p>+51 982-410-414</p>
-            </div>
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content reveal">
+          <span class="hero-subtitle">Construcciones & Saneamiento</span>
+          <h1 class="hero-title">Diseñamos tu <span class="accent-text">espacio de ensueño</span></h1>
+          <p>Expertos en arquitectura, remodelación y construcción en Perú. Transforma tu visión en realidad con JVC Urbano.</p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn">Reserva tu consulta</a>
+            <a href="/projects.html" class="btn btn-outline">Ver proyectos</a>
           </div>
-          <div class="info__all-elements">
-            <i class="ri-mail-open-line"></i>
-            <div class="info__elements">
-              <h4>Número telefónico</h4>
-              <p>+51 982-410-414</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div class="about-text reveal">
+          <span class="hero-subtitle">Sobre Nosotros</span>
+          <h2>Más de 10 años de experiencia construyendo el futuro</h2>
+          <p class="section__text">Somos una empresa dedicada al diseño, planificación y ejecución de proyectos de construcción y remodelación. Nuestro compromiso es la excelencia y la satisfacción total de nuestros clientes en cada detalle.</p>
+          
+          <div class="about-stats">
+            <div class="stat-item">
+              <h4>10+</h4>
+              <p>Años de experiencia</p>
+            </div>
+            <div class="stat-item">
+              <h4>28+</h4>
+              <p>Proyectos completados</p>
+            </div>
+            <div class="stat-item">
+              <h4>15+</h4>
+              <p>Profesionales expertos</p>
             </div>
           </div>
         </div>
-        <div class="home__space"></div>
-        <div class="info__box info__group2">
-          <div class="info__all-elements">
-            <i class="ri-global-line"></i>
-            <div class="info__elements">
-              <h4>Número telefónico</h4>
-              <p>+51 982-410-414</p>
+        <div class="about-images reveal">
+          <img src="/src/assets/About1.jpg" alt="About Image 1">
+          <img src="/src/assets/About2.jpg" alt="About Image 2" class="img-down">
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="hero-subtitle">Nuestros Servicios</span>
+          <h2>Lo mejor de JVC Urbano</h2>
+        </div>
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <div class="service-icon"><i class="ri-home-smile-line"></i></div>
+            <h4>Diseño Residencial</h4>
+            <p>Creamos espacios habitables que reflejan tu estilo de vida, fusionando confort y estética moderna.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon"><i class="ri-shape-line"></i></div>
+            <h4>Modelado 3D</h4>
+            <p>Visualiza tu proyecto antes de construirlo con nuestros detallados renderizados en 3D.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon"><i class="ri-building-line"></i></div>
+            <h4>Arquitectura</h4>
+            <p>Diseño estructural y arquitectónico eficiente, seguro e innovador para cualquier tipo de edificación.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon"><i class="ri-layout-masonry-line"></i></div>
+            <h4>Interiores & Exteriores</h4>
+            <p>Renovamos tus espacios dándoles vida, funcionalidad y un diseño impecable.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="section testimonials">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="hero-subtitle">Testimonios</span>
+          <h2>Lo que dicen nuestros clientes</h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal">
+            <p>JVC Urbano transformó nuestra casa colonial en una moderna residencia familiar. Su atención al detalle superó nuestras expectativas.</p>
+            <div class="client-info">
+              <h5>María González</h5>
+              <span>Lima</span>
             </div>
           </div>
-          <div class="info__all-elements">
-            <i class="ri-map-pin-line"></i>
-            <div class="info__elements">
-              <h4>Número telefónico</h4>
-              <p>+51 982-410-414</p>
+          <div class="testimonial-card reveal">
+            <p>Equipo profesional y altamente capacitado. El proyecto de nuestro edificio comercial se entregó antes de lo previsto y con calidad superior.</p>
+            <div class="client-info">
+              <h5>Carlos Méndez</h5>
+              <span>Arequipa</span>
+            </div>
+          </div>
+          <div class="testimonial-card reveal">
+            <p>Recomendado al 100%. Desde el diseño hasta la ejecución final, JVC Urbano demostró ser un socio confiable para nuestro proyecto.</p>
+            <div class="client-info">
+              <h5>Andrea Trujillo</h5>
+              <span>Trujillo</span>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <form action="https://api.web3forms.com/submit" method="POST">
-      <input type="hidden" name="access_key" value="7cd86f48-bc16-40cf-b67f-7945e2bc684e">
-      <div class="row__box">
-        <div class="input__group">
-          <input type="text" name="name" id="name" required aria-required="true">
-          <label for="name">Nombre</label>
-        </div>
-        <div class="input__group">
-          <input type="text" id="email" required aria-required="true">
-          <label for="email">Email</label>
-        </div>
-      </div>
-      <div class="input__group">
-        <input type="text" id="subject" required aria-required="true">
-        <label for="subject">Asunto</label>
-      </div>
-      <div class="input__group">
-        <textarea id="message" rows="13" required aria-required="true"></textarea>
-        <label for="message">Mensaje</label>
-      </div>
-      <button class="contact__button" type="submit">Enviar</button>
-    </form>
-  </section>
+    </section>
 
-  <!-- Scripts -->
-  <script src="js/main.js" defer></script>
-  <script src="js/components/header.js" defer></script>
-  <script src="js/components/sidebar.js" defer></script>
-  <script src="js/modules/projectscript.js"></script>
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <div>
+            <span class="hero-subtitle">Contáctanos</span>
+            <h2>Inicia tu proyecto hoy</h2>
+            <p class="section__text" style="margin-top: 1rem;">¿Tienes un proyecto en mente? Escríbenos y nuestro equipo de expertos se pondrá en contacto contigo a la brevedad.</p>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="ri-phone-line"></i></div>
+            <div class="info-details">
+              <h4>Teléfono</h4>
+              <p>+51 982-410-414</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="ri-mail-line"></i></div>
+            <div class="info-details">
+              <h4>Email</h4>
+              <p>contacto@jvcurbano.com</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="ri-map-pin-line"></i></div>
+            <div class="info-details">
+              <h4>Ubicación</h4>
+              <p>Lima, Perú</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form reveal">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="7cd86f48-bc16-40cf-b67f-7945e2bc684e">
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" name="name" placeholder="Nombre completo" required>
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" name="subject" placeholder="Asunto" required>
+            </div>
+            <div class="form-group">
+              <textarea name="message" rows="5" placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
+            </div>
+            <button class="btn" style="width: 100%" type="submit">Enviar Mensaje</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 JVC Urbano. Todos los derechos reservados. | Diseño y Desarrollo Premium</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/main.js"></script>
 </body>
 </html>
