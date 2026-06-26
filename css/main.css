@@ -1,29 +1,10 @@
+@import "./base.css";
 @import "./sections/about.css";
 @import "./sections/contact.css";
 @import "./sections/project.css";
 @import "./sections/service.css";
 @import "./sections/testimonials.css";
-* {
-  padding: 0;
-  margin: 0;
-  scroll-behavior: smooth;
-  box-sizing: border-box;
-  list-style: none;
-  border: none;
-  outline: none;
-  text-decoration: none;
-}
 
-:root {
-  --text-color: #fff;
-  --bg-color: #F1F1F1;
-  --main-color: #FF630F;
-  --paragraph-color: #616161;
-}
-
-body {
-  background: var(--bg-color);
-}
 .home__section {
   height: 1080px;
   width: 100%;
@@ -43,7 +24,7 @@ body {
   z-index: 999;
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: -10px 0 10px rgba(0, rgba(0,0,0,0.1);
   display: none;
   flex-direction: column;
   align-items: flex-start;
@@ -107,7 +88,6 @@ nav ul {
   justify-content: space-between;
   align-content: center;
   align-items: center;
-
 }
 
 nav li {
@@ -130,6 +110,7 @@ nav a {
 nav ul li a:hover {
   color: var(--main-color);
 }
+
 .logo__block {
   align-self: center;
   width: 32%;
@@ -139,7 +120,6 @@ nav ul li a:hover {
 nav img {
   height: 43px;
 }
-
 
 span {
   color: var(--main-color);
@@ -166,8 +146,6 @@ span {
   font-weight: 600;
   line-height: normal;
 }
-
-
 
 .home__text {
   position: relative;

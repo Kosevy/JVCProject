@@ -7,37 +7,36 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3em 3em;
+  padding: 3rem 3rem;
 }
 
 .description__box {
   max-width: 600px;
   width: 90%;
-  padding: 48px;
+  padding: 3rem;
   outline: 0;
   background-color: var(--bg-color);
-  justify-content: center;
   margin-left: auto;
   box-sizing: border-box;
-  max-height: 579px;
+  max-height: 36.1875rem; /* 579px */
 }
 
 .summary__text {
-  font-size: 16px;
+  font-size: 1rem;
   font-family: Montserrat;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
   font-weight: 400;
   line-height: 2rem;
   color: var(--paragraph-color);
 }
 
 .info__box h4 {
-  font-size: 24px;
+  font-size: 1.5rem; /* 24px */
   font-family: Marcellus;
 }
 
 .info__box p {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 2rem;
   font-family: Montserrat;
@@ -46,21 +45,17 @@
 
 .info__box i {
   color: var(--main-color);
-  font-size: 48px;
-  margin-right: 20px;
+  font-size: 3rem; /* 48px */
+  margin-right: 1.25rem; /* 20px */
 }
 
 .info__all-elements {
-  padding: 10px;
+  padding: 0.625rem; /* 10px */
   display: flex;
   align-items: flex-start;
 }
 
-.info__group1 {
-  display: flex;
-  flex-direction: row;
-}
-
+.info__group1,
 .info__group2 {
   display: flex;
   flex-direction: row;
@@ -69,28 +64,29 @@
 form {
   max-width: 600px;
   width: 90%;
-  padding: 48px;
+  padding: 3rem;
   justify-content: center;
   background-color: var(--bg-color);
   font-family: Montserrat;
   margin-right: auto;
   box-sizing: border-box;
-  max-height: 579px;
+  max-height: 36.1875rem; /* 579px */
 }
 
 .input__group {
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem; /* 30px */
   position: relative;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
-  padding: 10px;
+  padding: 0.625rem; /* 10px */
   outline: 0;
   border: 1px solid var(--main-color);
   color: var(--main-color);
   background-color: var(--bg-color);
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 label {
@@ -98,21 +94,21 @@ label {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 10px;
+  padding: 0.625rem; /* 10px */
   color: var(--main-color);
   cursor: text;
   transition: 0.2s;
 }
 
 .contact__button {
-  padding: 16px 0;
+  padding: 1rem 0;
   outline: none;
   background: var(--main-color);
   width: 100%;
   border: none;
   cursor: pointer;
   color: var(--text-color);
-  transition: all .50s ease;
+  transition: all .5s ease;
 }
 
 .contact__button:hover {
@@ -121,12 +117,12 @@ label {
   border: 0.5px solid var(--main-color);
 }
 
-input:focus~label,
-input:valid~label,
-textarea:focus~label,
-textarea:valid~label {
-  top: -35px;
-  font-size: 14px;
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
+  top: -2.1875rem; /* -35px */
+  font-size: 0.875rem; /* 14px */
 }
 
 .row__box {
@@ -139,13 +135,14 @@ textarea:valid~label {
   flex-basis: 48%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 64rem) { /* 1024px */
   .contact__section {
     display: flex;
     flex-direction: column;
   }
 
-  .description__box, form {
+  .description__box,
+  form {
     margin: 0;
   }
 }
