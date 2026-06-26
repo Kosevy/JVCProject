@@ -6,19 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!filterContainer) return;
 
   filterContainer.addEventListener('click', e => {
-    const btn = e.target.closest?';
-
-<tool_call>
-<function=Write>
-<parameter=content>
-// gallery-filter.js - Filter portfolio items with event delegation
-document.addEventListener('DOMContentLoaded', () => {
-  const filterContainer = document.getElementById('filter__btn');
-  const galleryItems = document.querySelectorAll('.project__gallery .item');
-
-  if (!filterContainer) return;
-
-  filterContainer.addEventListener('click', e => {
     const btn = e.target.closest('li');
     if (!btn) return;
 

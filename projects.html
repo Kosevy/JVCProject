@@ -1,123 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/projecthl.css">
-  <link rel="stylesheet" href="css/main.css">
-  <title>JVC Urbano</title>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "JVC Urbano",
-  "telephone": "+51 982 410 414",
-  "address": {
-    "@type": "PostalAddress",
-    "addressCountry": "PE"
-  },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      "opens": "08:00",
-      "closes": "18:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Saturday", "Sunday"],
-      "opens": "09:00",
-      "closes": "14:00"
-    }
-  ]
-}
-</script>
+  <meta name="description" content="Galería de proyectos de JVC Urbano - Descubre nuestros mejores trabajos en arquitectura, construcción y remodelación.">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/main.css">
+  <title>JVC Urbano - Proyectos</title>
 </head>
 <body>
-  <header>
-    <nav class="hero__section" aria-label="Primary navigation">
-      <div class="logo__block">
-        <img src="src/assets/logo.png" alt="JVC Urbano logo" loading="lazy" srcset="src/assets/logo.png 1x, src/assets/logo.png 2x">
+  <!-- HEADER -->
+  <header id="header">
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="/">
+          <img src="/src/assets/logo.png" alt="JVC Urbano" />
+        </a>
       </div>
-      <ul>
-        <li><a href="index.html">Volver</a></li>
-      </ul>
-      <div class="contact__block">
-        <h6 class="contact__text"><span>Contáctanos</span></h6>
-        <p class="contact__number">+51 982 410 414</p>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/#about">Nosotros</a></li>
+          <li><a href="/#services">Servicios</a></li>
+          <li><a href="/projects.html" class="active">Proyectos</a></li>
+          <li><a href="/#testimonials">Testimonios</a></li>
+        </ul>
+      </nav>
+      <div class="nav-contact">
+        <div class="contact-info-header">
+          <span>Contáctanos</span><br>
+          <strong>+51 982 410 414</strong>
+        </div>
       </div>
-    </nav>
+      <button class="mobile-menu-btn" aria-label="Abrir menú">
+        <i class="ri-menu-line"></i>
+      </button>
+    </div>
   </header>
 
-  <main>
-    <section class="project__section">
+  <main style="padding-top: 120px;">
+    <section class="section">
       <div class="container">
-        <div class="row">
-          <div class="project__summary-box">
-            <h2>Nuestros proyectos</h2>
-            <h3>Lo mejor de JVC Urbano</h3>
-            <p>How we work tortor vel orci efficitur, in venenatis felis molestie. In lobortis odio augue, id vulputate erat egestas sed. Ut euismod ipsum ut dolor hendrerit, non ultricies urna accumsan.</p>
-          </div>
+        <div class="section-header reveal">
+          <span class="hero-subtitle">Nuestros Proyectos</span>
+          <h2>Galería de Obras</h2>
+          <p class="section__text" style="max-width: 600px; margin: 1rem auto;">Explora nuestra selección de proyectos destacados, donde la visión arquitectónica se encuentra con la excelencia constructiva.</p>
         </div>
 
-        <div class="row">
-          <div class="filter__button">
-            <ul id="filter__btn">
-              <li class="active" data-target="all">Mostrar todo</li>
-              <li data-target="interior">Interiores</li>
-              <li data-target="residential">Residencial</li>
-              <li data-target="model">Modelado</li>
-            </ul>
-          </div>
+        <div class="project-filters reveal">
+          <button class="filter-btn active" data-filter="all">Mostrar Todo</button>
+          <button class="filter-btn" data-filter="interior">Interiores</button>
+          <button class="filter-btn" data-filter="residential">Residencial</button>
+          <button class="filter-btn" data-filter="model">Modelado 3D</button>
         </div>
 
-        <div class="row">
-          <div class="project__gallery">
-            <div class="item" data-id="interior">
-              <div class="inner">
-                <img src="src/project-assets/project1.jpg" alt="Project 1 - Interior" loading="lazy" srcset="src/project-assets/project1.jpg 1x, src/project-assets/project1.jpg 2x">
-              </div>
+        <div class="projects-grid">
+          <div class="project-item reveal" data-category="interior">
+            <img src="/src/project-assets/project1.jpg" alt="Proyecto Interior">
+            <div class="project-overlay">
+              <h4>Diseño Interior Moderno</h4>
+              <p>Interiores</p>
             </div>
-
-            <div class="item" data-id="residential">
-              <div class="inner">
-                <img src="src/project-assets/project2.jpg" alt="Project 2 - Residential" loading="lazy" srcset="src/project-assets/project2.jpg 1x, src/project-assets/project2.jpg 2x">
-              </div>
+          </div>
+          <div class="project-item reveal" data-category="residential">
+            <img src="/src/project-assets/project2.jpg" alt="Proyecto Residencial">
+            <div class="project-overlay">
+              <h4>Casa Minimalista</h4>
+              <p>Residencial</p>
             </div>
-
-            <div class="item" data-id="interior">
-              <div class="inner">
-                <img src="src/project-assets/project3.jpg" alt="Project 3 - Interior" loading="lazy" srcset="src/project-assets/project3.jpg 1x, src/project-assets/project3.jpg 2x">
-              </div>
+          </div>
+          <div class="project-item reveal" data-category="interior">
+            <img src="/src/project-assets/project3.jpg" alt="Renovación Cocina">
+            <div class="project-overlay">
+              <h4>Renovación de Cocina</h4>
+              <p>Interiores</p>
             </div>
-
-            <div class="item" data-id="model">
-              <div class="inner">
-                <img src="src/project-assets/project4.jpg" alt="Project 4 - Model" loading="lazy" srcset="src/project-assets/project4.jpg 1x, src/project-assets/project4.jpg 2x">
-              </div>
+          </div>
+          <div class="project-item reveal" data-category="model">
+            <img src="/src/project-assets/project4.jpg" alt="Renderizado 3D">
+            <div class="project-overlay">
+              <h4>Concepto Corporativo</h4>
+              <p>Modelado 3D</p>
             </div>
-
-            <div class="item" data-id="interior">
-              <div class="inner">
-                <img src="src/project-assets/project5.jpg" alt="Project 5 - Interior" loading="lazy" srcset="src/project-assets/project5.jpg 1x, src/project-assets/project5.jpg 2x">
-              </div>
+          </div>
+          <div class="project-item reveal" data-category="interior">
+            <img src="/src/project-assets/project5.jpg" alt="Baño de Lujo">
+            <div class="project-overlay">
+              <h4>Baño de Lujo</h4>
+              <p>Interiores</p>
             </div>
-
-            <div class="item" data-id="model">
-              <div class="inner">
-                <img src="src/project-assets/project6.jpg" alt="Project 6 - Model" loading="lazy" srcset="src/project-assets/project6.jpg 1x, src/project-assets/project6.jpg 2x">
-              </div>
+          </div>
+          <div class="project-item reveal" data-category="model">
+            <img src="/src/project-assets/project6.jpg" alt="Renderizado Exterior">
+            <div class="project-overlay">
+              <h4>Edificio Comercial</h4>
+              <p>Modelado 3D</p>
             </div>
           </div>
         </div>
-
-        <div class="return__section">
-          <button class="return__btn"><a href="index.html">Ir al inicio</a></button>
+        
+        <div class="text-center" style="margin-top: 4rem;">
+            <a href="/" class="btn btn-outline">Volver al Inicio</a>
         </div>
       </div>
     </section>
   </main>
-  <script src="js/bundle.js" defer></script>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 JVC Urbano. Todos los derechos reservados. | Diseño y Desarrollo Premium</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/main.js"></script>
 </body>
 </html>
