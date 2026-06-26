@@ -7,12 +7,38 @@
   <link rel="stylesheet" href="css/projecthl.css">
   <link rel="stylesheet" href="css/main.css">
   <title>JVC Urbano</title>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "JVC Urbano",
+  "telephone": "+51 982 410 414",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "PE"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday", "Sunday"],
+      "opens": "09:00",
+      "closes": "14:00"
+    }
+  ]
+}
+</script>
 </head>
 <body>
   <header>
     <nav class="hero__section" aria-label="Primary navigation">
       <div class="logo__block">
-        <img src="src/assets/logo.png" alt="JVC Urbano logo">
+        <img src="src/assets/logo.png" alt="JVC Urbano logo" loading="lazy" srcset="src/assets/logo.png 1x, src/assets/logo.png 2x">
       </div>
       <ul>
         <li><a href="index.html">Volver</a></li>
@@ -50,37 +76,37 @@
           <div class="project__gallery">
             <div class="item" data-id="interior">
               <div class="inner">
-                <img src="src/project-assets/project1.jpg" alt="Project 1 - Interior">
+                <img src="src/project-assets/project1.jpg" alt="Project 1 - Interior" loading="lazy" srcset="src/project-assets/project1.jpg 1x, src/project-assets/project1.jpg 2x">
               </div>
             </div>
 
             <div class="item" data-id="residential">
               <div class="inner">
-                <img src="src/project-assets/project2.jpg" alt="Project 2 - Residential">
+                <img src="src/project-assets/project2.jpg" alt="Project 2 - Residential" loading="lazy" srcset="src/project-assets/project2.jpg 1x, src/project-assets/project2.jpg 2x">
               </div>
             </div>
 
             <div class="item" data-id="interior">
               <div class="inner">
-                <img src="src/project-assets/project3.jpg" alt="Project 3 - Interior">
+                <img src="src/project-assets/project3.jpg" alt="Project 3 - Interior" loading="lazy" srcset="src/project-assets/project3.jpg 1x, src/project-assets/project3.jpg 2x">
               </div>
             </div>
 
             <div class="item" data-id="model">
               <div class="inner">
-                <img src="src/project-assets/project4.jpg" alt="Project 4 - Model">
+                <img src="src/project-assets/project4.jpg" alt="Project 4 - Model" loading="lazy" srcset="src/project-assets/project4.jpg 1x, src/project-assets/project4.jpg 2x">
               </div>
             </div>
 
             <div class="item" data-id="interior">
               <div class="inner">
-                <img src="src/project-assets/project5.jpg" alt="Project 5 - Interior">
+                <img src="src/project-assets/project5.jpg" alt="Project 5 - Interior" loading="lazy" srcset="src/project-assets/project5.jpg 1x, src/project-assets/project5.jpg 2x">
               </div>
             </div>
 
             <div class="item" data-id="model">
               <div class="inner">
-                <img src="src/project-assets/project6.jpg" alt="Project 6 - Model">
+                <img src="src/project-assets/project6.jpg" alt="Project 6 - Model" loading="lazy" srcset="src/project-assets/project6.jpg 1x, src/project-assets/project6.jpg 2x">
               </div>
             </div>
           </div>
@@ -92,10 +118,6 @@
       </div>
     </section>
   </main>
-
-  <script src="js/main.js" defer></script>
-  <script src="js/components/header.js" defer></script>
-  <script src="js/components/sidebar.js" defer></script>
-  <script src="js/modules/gallery-filter.js"></script>
+  <script src="js/bundle.js" defer></script>
 </body>
 </html>

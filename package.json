@@ -1,0 +1,14 @@
+{
+  "name": "jvc-urbano-website",
+  "version": "1.0.0",
+  "description": "Simple website for JVC Urbano",
+  "scripts": {
+    "lint": "eslint *.js js/**/*.js",
+    "format": "prettier --write \"**/*.{html,css,js}\"",
+    "build": "build.bat"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": "^2.0.0"
+  }
+}
