@@ -1,0 +1,36 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "src/assets"
+public_folder: "/src/assets"
+
+collections:
+  - name: "data"
+    label: "Datos de la Web"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "services"
+        label: "Servicios"
+        file: "src/data/services.json"
+        fields:
+          - name: "services"
+            label: "Lista de Servicios"
+            widget: "list"
+            fields:
+              - { label: "Icono (Clase de Remixicon)", name: "icon", widget: "string" }
+              - { label: "Nombre del Servicio", name: "title", widget: "string" }
+              - { label: "Descripción", name: "description", widget: "text" }
+      - name: "testimonials"
+        label: "Testimonios"
+        file: "src/data/testimonials.json"
+        fields:
+          - name: "testimonials"
+            label: "Lista de Testimonios"
+            widget: "list"
+            fields:
+              - { label: "Comentario", name: "comment", widget: "text" }
+              - { label: "Nombre del Cliente", name: "client", widget: "string" }
+              - { label: "Ciudad / Ubicación", name: "location", widget: "string" }

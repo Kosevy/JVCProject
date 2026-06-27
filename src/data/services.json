@@ -1,0 +1,24 @@
+{
+  "services": [
+    {
+      "icon": "ri-home-smile-line",
+      "title": "Diseño Residencial",
+      "description": "Creamos espacios habitables que reflejan tu estilo de vida, fusionando confort y estética moderna."
+    },
+    {
+      "icon": "ri-shape-line",
+      "title": "Modelado 3D",
+      "description": "Visualiza tu proyecto antes de construirlo con nuestros detallados renderizados en 3D."
+    },
+    {
+      "icon": "ri-building-line",
+      "title": "Arquitectura",
+      "description": "Diseño estructural y arquitectónico eficiente, seguro e innovador para cualquier tipo de edificación."
+    },
+    {
+      "icon": "ri-layout-masonry-line",
+      "title": "Interiores & Exteriores",
+      "description": "Renovamos tus espacios dándoles vida, funcionalidad y un diseño impecable."
+    }
+  ]
+}

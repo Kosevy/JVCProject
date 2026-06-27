@@ -108,7 +108,7 @@ header.sticky {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: linear-gradient(135deg, rgba(13,15,18,0.9) 0%, rgba(13,15,18,0.6) 100%), url('../src/assets/herobackground.jpg') center/cover no-repeat;
+  background: linear-gradient(135deg, rgba(13,15,18,0.9) 0%, rgba(13,15,18,0.6) 100%), url('../assets/herobackground.jpg') center/cover no-repeat;
   z-index: -1;
 }
 
@@ -512,4 +512,67 @@ footer p {
   .contact-form {
     padding: 2rem;
   }
+  
+  .map-container {
+    height: 300px;
+  }
+}
+
+/* --- MAP CONTAINER --- */
+.map-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
+  height: 450px;
+}
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  filter: grayscale(1) invert(0.9) contrast(1.2) opacity(0.85);
+  transition: var(--transition);
+}
+.map-container iframe:hover {
+  filter: none;
+  opacity: 1;
+}
+
+/* --- WHATSAPP HEADER WIDGET --- */
+.contact-buttons-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 0.2rem;
+}
+.contact-header-link {
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: var(--transition);
+}
+.contact-header-link:hover {
+  color: var(--accent-color);
+}
+.whatsapp-header-link {
+  background: #25d366;
+  color: #fff;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  transition: var(--transition);
+  text-decoration: none;
+}
+.whatsapp-header-link:hover {
+  background: #20ba5a;
+  transform: scale(1.1);
 }

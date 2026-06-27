@@ -1,4 +1,5 @@
 // Main JavaScript file for JVC Urbano
+import { loadDynamicData } from './services.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   
@@ -38,27 +39,29 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --- REVEAL ON SCROLL ---
-  const revealElements = document.querySelectorAll('.reveal');
-  
-  const revealCallback = (entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active');
-        observer.unobserve(entry.target);
-      }
+  function initRevealOnScroll() {
+    const revealElements = document.querySelectorAll('.reveal');
+    
+    const revealCallback = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+    
+    const revealOptions = {
+      threshold: 0.15,
+      rootMargin: "0px 0px -50px 0px"
+    };
+    
+    const revealObserver = new IntersectionObserver(revealCallback, revealOptions);
+    
+    revealElements.forEach(el => {
+      revealObserver.observe(el);
     });
-  };
-  
-  const revealOptions = {
-    threshold: 0.15,
-    rootMargin: "0px 0px -50px 0px"
-  };
-  
-  const revealObserver = new IntersectionObserver(revealCallback, revealOptions);
-  
-  revealElements.forEach(el => {
-    revealObserver.observe(el);
-  });
+  }
 
   // --- PROJECT FILTERING ---
   const filterBtns = document.querySelectorAll('.filter-btn');
@@ -92,4 +95,10 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // --- LOAD DYNAMIC DATA (SERVICES, TESTIMONIALS) ---
+  loadDynamicData().then(() => {
+    // Initialize reveal elements after dynamic content has been inserted
+    initRevealOnScroll();
+  });
 });
