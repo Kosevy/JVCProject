@@ -1,0 +1,19 @@
+{
+  "testimonials": [
+    {
+      "comment": "JVC Urbano transformó nuestra casa colonial en una moderna residencia familiar. Su atención al detalle superó nuestras expectativas.",
+      "client": "María González",
+      "location": "Lima"
+    },
+    {
+      "comment": "Equipo profesional y altamente capacitado. El proyecto de nuestro edificio comercial se entregó antes de lo previsto y con calidad superior.",
+      "client": "Carlos Méndez",
+      "location": "Arequipa"
+    },
+    {
+      "comment": "Recomendado al 100%. Desde el diseño hasta la ejecución final, JVC Urbano demostró ser un socio confiable para nuestro proyecto.",
+      "client": "Andrea Trujillo",
+      "location": "Trujillo"
+    }
+  ]
+}

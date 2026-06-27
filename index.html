@@ -6,7 +6,7 @@
   <meta name="description" content="JVC Urbano - Empresa líder en construcción, arquitectura y reformas en Perú. Más de 10 años de experiencia entregando proyectos de calidad.">
   <meta name="keywords" content="constructora, arquitectura, reformas, construcción, Lima, Perú, JVC Urbano">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/src/css/main.css">
   <title>JVC Urbano - Constructora y Arquitectura</title>
 </head>
 <body>
@@ -30,7 +30,10 @@
       <div class="nav-contact">
         <div class="contact-info-header">
           <span>Contáctanos</span><br>
-          <strong>+51 982 410 414</strong>
+          <div class="contact-buttons-header">
+            <a href="tel:+51982410414" class="contact-header-link" title="Llamar"><i class="ri-phone-fill"></i> +51 982 410 414</a>
+            <a href="https://wa.me/51982410414?text=Hola%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios" target="_blank" rel="noopener" class="whatsapp-header-link" title="WhatsApp"><i class="ri-whatsapp-fill"></i></a>
+          </div>
         </div>
       </div>
       <button class="mobile-menu-btn" aria-label="Abrir menú">
@@ -163,7 +166,14 @@
             <div class="info-icon"><i class="ri-phone-line"></i></div>
             <div class="info-details">
               <h4>Teléfono</h4>
-              <p>+51 982-410-414</p>
+              <p><a href="tel:+51982410414" style="color: var(--text-color); text-decoration: none;">+51 982-410-414</a></p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon" style="background: rgba(37, 211, 102, 0.1); color: #25d366;"><i class="ri-whatsapp-line"></i></div>
+            <div class="info-details">
+              <h4>WhatsApp</h4>
+              <p><a href="https://wa.me/51982410414?text=Hola%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios" target="_blank" rel="noopener" class="whatsapp-link" style="color: #25d366; text-decoration: none; font-weight: 500;">+51 982 410 414</a></p>
             </div>
           </div>
           <div class="info-item">
@@ -203,6 +213,11 @@
           </form>
         </div>
       </div>
+
+      <!-- MAP CONTAINER -->
+      <div class="container map-container reveal" style="margin-top: 4rem;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.1971923085566!2d-77.0602647242235!3d-12.029941388205565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cfec1c13c8a7%3A0x5cb0483d9c49b6ac!2sJVC%20URBANO%20S.A.C!5e0!3m2!1ses-419!2spe!4v1782577615373!5m2!1ses-419!2spe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
     </section>
   </main>
 
@@ -212,6 +227,6 @@
     </div>
   </footer>
 
-  <script type="module" src="/js/main.js"></script>
+  <script type="module" src="/src/js/main.js"></script>
 </body>
 </html>
